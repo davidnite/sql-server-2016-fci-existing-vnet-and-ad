@@ -30,13 +30,13 @@
       "value": "dnite"
     },
     "adminPassword": {
-      "value": "Ineed12chars!"
+      "value": "GEN-PASSWORD"
     },
     "svcUsername": {
       "value": "sql"
     },
     "svcPassword": {
-      "value": "Ineed12chars!"
+      "value": "GEN-PASSWORD"
     },
     "existingVirtualNetworkRGName": {
       "value": "core-dn-msdn"
