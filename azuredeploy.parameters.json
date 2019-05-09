@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namePrefix": {
+      "value": "cluster"
+    },
+    "vmSize": {
+      "value": "Standard_D4s_v3"
+    },
+    "vmDiskSize": {
+      "value": 256
+    },
+    "dataVolSize": {
+      "value": 128
+    },
+    "logVolSize": {
+      "value": 128
+    },
+    "tempVolSize": {
+      "value": 128
+    },
+    "vmDiskCount": {
+      "value": 2
+    },
+    "existingDomainName": {
+      "value": "dnite.solutions"
+    },
+    "adminUsername": {
+      "value": "dnite"
+    },
+    "adminPassword": {
+      "value": "Ineed12chars!"
+    },
+    "svcUsername": {
+      "value": "sql"
+    },
+    "svcPassword": {
+      "value": "Ineed12chars!"
+    },
+    "existingVirtualNetworkRGName": {
+      "value": "core-dn-msdn"
+    },
+    "existingVirtualNetworkName": {
+      "value": "core-dn-msdn"
+    },
+    "existingSubnetName": {
+      "value": "core-dn-msdn"
+    },
+    "clusterIP": {
+      "value": "10.0.0.100"
+    }
+  }
+}
