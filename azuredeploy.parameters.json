@@ -49,9 +49,6 @@
     },
     "clusterIP": {
       "value": "10.0.0.99"
-    },
-    "sqlClusterIP": {
-      "value": "10.0.0.100"
     }
   }
 }

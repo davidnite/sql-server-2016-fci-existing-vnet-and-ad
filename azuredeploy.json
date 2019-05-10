@@ -112,12 +112,6 @@
         "description": "A free IP Address on the selected subnet for the SQL Cluster & load balancer."
       }
     },
-    "sqlClusterIP": {
-      "type": "string",
-      "metadata": {
-        "description": "IP Address of the SQL cluster"
-      }
-    },
     "_artifactsLocation": {
       "type": "string",
       "metadata": {
@@ -186,9 +180,6 @@
             "value": "[parameters('vmDiskCount')]"
           },
           "clusterIP": {
-            "value": "[parameters('clusterIP')]"
-          },
-          "sqlClusterIP": {
             "value": "[parameters('clusterIP')]"
           },
           "_artifactsLocation": {
