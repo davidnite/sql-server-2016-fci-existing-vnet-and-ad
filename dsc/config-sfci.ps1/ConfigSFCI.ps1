@@ -142,7 +142,6 @@ configuration ConfigSFCI
         xCluster FailoverCluster
         {
             Name = $ClusterName
-            StaticIPAddress = $clusterIP
             DomainAdministratorCredential = $DomainCreds
             Nodes = $Nodes
 	        DependsOn = "[Script]MoveClusterGroups0"

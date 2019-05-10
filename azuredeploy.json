@@ -188,6 +188,9 @@
           "clusterIP": {
             "value": "[parameters('clusterIP')]"
           },
+          "sqlClusterIP": {
+            "value": "[parameters('clusterIP')]"
+          },
           "_artifactsLocation": {
             "value": "[parameters('_artifactsLocation')]"
           },

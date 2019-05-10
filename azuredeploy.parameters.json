@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "namePrefix": {
-      "value": "sqlcluster"
+      "value": "sqlc"
     },
     "vmSize": {
       "value": "Standard_D4s_v3"
