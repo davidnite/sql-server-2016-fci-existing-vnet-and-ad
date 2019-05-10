@@ -171,7 +171,7 @@ configuration ConfigSFCI
 
         Script EnableS2D
         {
-            SetScript = "Enable-ClusterS2D -Confirm:0; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Data01 -FileSystem NTFS -DriveLetter ${dataDriveLetter} -Size ${dataVolSize}; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Log01 -FileSystem NTFS -DriveLetter ${logDriveLetter} -Size ${logVolSize}; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Temp01 -FileSystem NTFS -DriveLetter ${tempDriveLetter} -Size ${tempVolSize}"
+            SetScript = "Enable-ClusterS2D -Confirm:0; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Data01 -FileSystem NTFS -DriveLetter ${dataDriveLetter} -Size ${dataVolSize}GB; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Log01 -FileSystem NTFS -DriveLetter ${logDriveLetter} -Size ${logVolSize}GB; New-Volume -StoragePoolFriendlyName S2D* -FriendlyName Temp01 -FileSystem NTFS -DriveLetter ${tempDriveLetter} -Size ${tempVolSize}GB"
             TestScript = "(Get-StoragePool -FriendlyName S2D*).OperationalStatus -eq 'OK'"
             GetScript = "@{Ensure = if ((Get-StoragePool -FriendlyName S2D*).OperationalStatus -eq 'OK') {'Present'} Else {'Absent'}}"
             DependsOn = "[Script]MoveClusterGroups1"

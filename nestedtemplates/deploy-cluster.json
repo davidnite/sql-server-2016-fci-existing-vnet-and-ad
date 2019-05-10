@@ -87,21 +87,21 @@
     "dataVolSize": {
       "type": "int",
       "metadata": {
-        "description": "Size of the data volume inside the Storage Pool"
+        "description": "Size in GB of the data volume inside the Storage Pool"
       },
       "defaultValue": 128
     },
     "logVolSize": {
       "type": "int",
       "metadata": {
-        "description": "Size of the log volume inside the Storage Pool"
+        "description": "Size in GB of the log volume inside the Storage Pool"
       },
       "defaultValue": 128
     },
     "tempVolSize": {
       "type": "int",
       "metadata": {
-        "description": "Size of the temp volume inside the Storage Pool"
+        "description": "Size in GB of the temp volume inside the Storage Pool"
       },
       "defaultValue": 128
     },
