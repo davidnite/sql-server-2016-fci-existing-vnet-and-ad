@@ -85,7 +85,7 @@ configuration PrepSFCI
             TestScript = '(test-path -Path "C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\master.mdf") -eq $false'
             GetScript = '@{Ensure = if ((test-path -Path "C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\master.mdf") -eq $false) {"Present"} Else {"Absent"}}'
             DependsOn = "[xComputer]DomainJoin"
-        
+        }
 
         xPendingReboot Reboot1
         { 
