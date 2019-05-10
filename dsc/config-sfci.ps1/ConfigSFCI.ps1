@@ -43,6 +43,9 @@ configuration ConfigSFCI
         [System.Management.Automation.PSCredential]$witnessStorageKey,
 
         [Parameter(Mandatory)]
+        [String]$sqlClusterIP,
+
+        [Parameter(Mandatory)]
         [String]$clusterIP,
 
         [String]$DomainNetbiosName=(Get-NetBIOSName -DomainName $DomainName),
@@ -139,6 +142,7 @@ configuration ConfigSFCI
         xCluster FailoverCluster
         {
             Name = $ClusterName
+            StaticIPAddress = $clusterIP
             DomainAdministratorCredential = $DomainCreds
             Nodes = $Nodes
 	        DependsOn = "[Script]MoveClusterGroups0"
@@ -260,7 +264,7 @@ configuration ConfigSFCI
             SQLTempDBDir = "T:\TEMP"
             SQLTempDBLogDir = "L:\LOG"
             SQLBackupDir = "S:\BACKUP"
-            FailoverClusterIPAddress = $clusterIP
+            FailoverClusterIPAddress = $sqlClusterIP
             SQLSvcAccount = $ServiceCreds
             SQLSysAdminAccounts = $AdminUserNames
             ASSysAdminAccounts = $AdminUserNames

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "namePrefix": {
-      "value": "cluster"
+      "value": "sqlcluster"
     },
     "vmSize": {
       "value": "Standard_D4s_v3"
@@ -48,6 +48,9 @@
       "value": "core-dn-msdn"
     },
     "clusterIP": {
+      "value": "10.0.0.99"
+    },
+    "sqlClusterIP": {
       "value": "10.0.0.100"
     }
   }
