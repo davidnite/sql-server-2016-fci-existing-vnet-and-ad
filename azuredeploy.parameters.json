@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "namePrefix": {
-      "value": "sqlc"
+      "value": "clussql"
     },
     "vmSize": {
       "value": "Standard_D4s_v3"
@@ -24,31 +24,32 @@
       "value": 2
     },
     "existingDomainName": {
-      "value": "dnite.solutions"
+      "value": "domain.name"
     },
     "adminUsername": {
-      "value": "dnite"
+      "value": "domainadmin"
     },
     "adminPassword": {
       "value": "GEN-PASSWORD"
     },
     "svcUsername": {
-      "value": "sql"
+      "value": "sqlsvc"
     },
     "svcPassword": {
       "value": "GEN-PASSWORD"
     },
     "existingVirtualNetworkRGName": {
-      "value": "core-dn-msdn"
+      "value": "vnetrg"
     },
     "existingVirtualNetworkName": {
-      "value": "core-dn-msdn"
+      "value": "vnet"
     },
     "existingSubnetName": {
-      "value": "core-dn-msdn"
+      "value": "subnet"
     },
     "clusterIP": {
-      "value": "10.0.0.99"
+      "value": "10.1.1.100"
     }
   }
 }
+
